@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+ 
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header__logo">
+        device
+      </p>
+
+      <div class="page-header__user-menu user-menu">
+        <ul class="user-menu__list">
+          <li class="user-menu__list-element">
+            <a class="user-menu__list-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-menu__list-element">
+            <a class="user-menu__list-link" href="#">Войти</a>
+          </li>
+          <li class="user-menu__list-element">
+            <a class="user-menu__list-link" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu__list-element">
+            <a class="user-menu__list-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-header__nav navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <main  class="page-catalog">
+    
+    <h1 class="visually-hidden">Каталог магазина лучших электронных гаджетов Device</h1>
+    
+    
+    
+  </main>
+  
+  <footer class="page-footer">
+    <div class="container">
+
+      <div class="page-footer__element user-menu">
+        <p class="user-menu__logo">
+          device
+        </p>
+        <ul class="user-menu__list">
+          <li class="user-menu__list-element">
+            <a class="user-menu__list-link" href="#">Войти</a>
+          </li>
+          <li class="user-menu__list-element">
+            <a class="user-menu__list-link" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu__list-element">
+            <a class="user-menu__list-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__element">
+        <p class="address">
+          г. Москва, ул. Строителей, 15
+        </p>
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Доставка</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Гарантия</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <p class="phone">
+          Тел.: +7 (495) 495-95-95
+        </p>
+      </div>
+
+      <div class="page-footer__element">
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a class="social-list-link" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">
+          <img class="copyright__pic" src="/img/" alt="Логотип HTML-academy">
+        </p>
+      </div>
+
+    </div>
+  </footer>
+  
+  <!-- Всплывающее окно Напишите нам -->
+  <section class="popup write-us">
+    <button class="write-us__close button button--close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form class="write-us__form form" action="">
+      <div class="write-us__wrap">
+        <p class="input-wrap">
+          <label for="name">Ваше имя:</label>
+          <input class="text-input" id="name" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p class="input-wrap">
+          <label for="email">Ваш e-mail:</label>
+          <input class="text-input" type="email" placeholder="email@example.com">
+        </p>
+      </div>
+      <div class="write-us__wrap">
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" cols="30" rows="10">В свободной форме</textarea>
+        <p class="write-us__submit-wrap">
+          <button class="write-us__submit button" type="submit">Отправить</button>
+        </p>
+      </div>
+    </form>
+  </section>
+
+  <!-- Всплывающее окно с большим изображением карты -->
+  <section class="popup map-popup">
+    <button class="map-popup__close button button--close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <h2 class="visually-hidden">Интерактивная карта: где мы находимся</h2>
+    <p class="map-popup__wrap">
+      <img class="map-popup__img" src="" width="" height="" alt="Где мы находимся">
+    </p>
+  </section>
+  
+</body>
+</html>
