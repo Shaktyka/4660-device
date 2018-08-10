@@ -1,7 +1,7 @@
 /* ШРИФТЫ */
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   src: url('../fonts/opensans.woff2') format('woff2'),
        url('../fonts/opensans.woff') format('woff');
   font-weight: 400;
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   src: url('../fonts/opensanslight.woff2') format('woff2'),
        url('../fonts/opensanslight.woff') format('woff');
   font-weight: 300;
@@ -39,6 +39,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  font-weight: 300;
 }
 
 .page-header {
@@ -63,10 +69,103 @@ body {
 
 /* ШАПКА САЙТА */
 
-/* РАЗДЕЛ SECTIONS */
+.page-header__logo {
+  margin: 0;
 
-.section {
+  font-family: "Gilroy";
+  font-size: 48px;
+  line-height: 48px;
+  color: #000000;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-menu__search-link {
+  text-decoration: none;
+}
+
+.user-menu {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-menu__link {
+  text-decoration: none; 
+}
+
+.user-menu__link:first-child {
+  font: inherit;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-list__link {
+  text-decoration: none;
+}
+
+/* ВЕРХНИЙ СЛАЙДЕР */
+
+.slider__header {
+  margin: 0;
+
+  font-family: "Gilroy";
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promo-slide--2,
+.promo-slide--3 {
+  display: none;
+}
+
+.controls__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* РАЗДЕЛ SHOP-SECTIONS */
+
+.shop-sections__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section__pic {
+  width: 160px;
+  height: 160px;
   background-color: #f7e296;
+}
+
+.section__link {
+  text-decoration: none;
 }
 
 /* РАЗДЕЛ SERVICES */
@@ -74,6 +173,52 @@ body {
 .services {
   background-color: #e5e5e5;
   /* тут потом градиент прописать */
+}
+
+.services__toggles-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services__toggles-toggle {
+  text-decoration: none;
+}
+
+.services__slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide--2,
+.slide--3 {
+  display: none;
+}
+
+/* РАЗДЕЛ ЛОГОТИПОВ */
+
+.logotypes__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* РАЗДЕЛ ИНФО */
+
+.info__wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+/* РАЗДЕЛ О НАС */
+
+.about__partners {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* КОНТАКТЫ */
@@ -87,3 +232,65 @@ body {
 .page-footer {
   background-color: #464646;
 }
+
+.page-footer__element {
+  display: flex;
+}
+
+.page-footer__logo {
+  margin: 0;
+
+  font-family: "Gilroy";
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffc600;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.user-menu__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-menu__list-link {
+  text-decoration: none;
+}
+
+.page-footer__address,
+.page-footer__phone {
+  color: white;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list__link {
+  text-decoration: none;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list-link {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+}
+
+/* MODAL НАПИШИТЕ НАМ */
+
+/* MODAL с картой */
