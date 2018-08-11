@@ -51,8 +51,12 @@ body {
   font-weight: 300;
 }
 
-.page-header {
-  background-color: rgba(240, 197, 46, 0.5);
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -126,6 +130,15 @@ body {
 }
 
 /* ШАПКА САЙТА */
+
+.page-header {
+  /* какие-то стили */
+}
+
+.page-header__wrap {
+  width: 1160px;
+  background-color: rgba(240, 197, 46, 0.5);
+}
 
 .page-header__logo-wrap {
   margin: 0;
@@ -508,16 +521,24 @@ body {
   text-decoration: none;
 }
 
-/* КАТАЛОГ ФИЛЬТР */
+/* ФИЛЬТР */
 
 .catalog__wrap {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
+}
+
+.filter {
+  background-color: #eeeeee;
 }
 
 .filter__wrap {
   width: 202px;
+}
+
+.filter__header {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .filter__title {
@@ -540,6 +561,7 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .sorting__header-title {
@@ -790,6 +812,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* МОДАЛКИ */
+
+.modal {
+  display: none;
+} 
 
 /* MODAL НАПИШИТЕ НАМ */
 
