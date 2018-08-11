@@ -90,6 +90,9 @@ body {
 /* ФОРМЫ */
 
 .form__legend {
+  margin: 0;
+  padding: 0;
+
   font-family: "Gilroy";
   font-size: 18px;
   line-height: 24px;
@@ -110,9 +113,11 @@ body {
 .form__input-wrap {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.catalog__filter-element label {
+.form__input-wrap label {
   font-family: "OpenSans";
   font-size: 14px;
   line-height: 40px;
@@ -505,17 +510,17 @@ body {
 
 /* КАТАЛОГ ФИЛЬТР */
 
-.catalog__content-wrap {
+.catalog__wrap {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
 
-.filter {
+.filter__wrap {
   width: 202px;
 }
 
-.catalog__filter-title {
+.filter__title {
   margin: 0;
   padding: 0;
 
@@ -524,11 +529,12 @@ body {
   line-height: 24px;
   color: #000000;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 /* КАТАЛОГ СОРТИРОВКА */
 
-.catalog__sort-header {
+.sorting__header {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -536,7 +542,7 @@ body {
   display: flex;
 }
 
-.catalog__sort-title {
+.sorting__header-title {
   margin: 0;
   padding: 0;
 
@@ -545,6 +551,7 @@ body {
   line-height: 24px;
   color: #000000;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .sort-list {
