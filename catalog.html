@@ -102,108 +102,109 @@
     </div>
 
     <section class="catalog">
-      <div class="catalog__header">
-        <div class="container">
+      <div class="container">
 
-          <div class="catalog__filter-header">
-            <h3 class="catalog__filter-title">Фильтр:</h3>
-          </div>
+        <!-- Блок фильтров -->
+        <section class="catalog__filter filter">
+          <div class="filter__wrap">
+            <div class="filter__header">
+              <h3 class="filter__title">Фильтр:</h3>
+            </div>
+            <!-- Блок с фильтрами -->
+            <div class="filter__content">
+              <form class="filter__form form" action="">
 
-          <div class="catalog__sort-header">
-
-            <h3 class="catalog__sort-title">Сортировка:</h3>
-
-            <ul class="catalog__sort-list sort-list">
-              <li class="sort-list__item sort-list__item--active">
-                <a class="sort-list__link" href="#">По цене</a>
-              </li>
-              <li class="sort-list__item">
-                <a class="sort-list__link" href="#">По типу</a>
-              </li>
-              <li class="sort-list__item">
-                <a class="sort-list__link" href="#">По популярности</a>
-              </li>
-            </ul>
-
-            <ul class="catalog__sort-toggles sort-toggles">
-              <li class="sort-toggles__item">
-                <a class="sort-toggles__link" href="#">
-                  <span class="visually-hidden">По возрастанию</span>
-                </a>
-              </li>
-              <li class="sort-toggles__item sort-toggles__item--фсешму">
-                <a class="sort-toggles__link" href="#">
-                  <span class="visually-hidden">По убыванию</span>
-                </a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="catalog__content">
-        <div class="container">
-          <div class="catalog__content-wrap">
-
-          <!-- Блок с фильтрами -->
-          <section class="catalog__filter filter">
-            <form class="filter__form form" action="">
-
-              <fieldset class="catalog__filter-element filter__price">
-                <legend class="form__legend">Стоимость</legend>
+                <fieldset class="filter__unit price-filter">
+                  <legend class="form__legend">Стоимость</legend>
                   <div class="form__range-wrap">
                     рейндж
                   </div>
-              </fieldset>
+                </fieldset>
 
-              <fieldset class="catalog__filter-element filter__color">
-                <legend class="form__legend">Цвет</legend>
-                  <p class="form__input-wrap">
-                    <input class="form__checkbox" id="" type="checkbox" value="black" checked>
-                    <label for="">Чёрный</label>
-                  </p>
-                  <p class="form__input-wrap">
-                    <input class="form__checkbox" id="" type="checkbox" value="white">
-                    <label for="">Белый</label>
-                  </p>
-                  <p class="form__input-wrap">
-                    <input class="form__checkbox" id="" type="checkbox" value="blue" checked>
-                    <label for="">Синий</label>
-                  </p>
-                  <p class="form__input-wrap">
-                    <input class="form__checkbox" id="" type="checkbox" value="red" checked>
-                    <label for="">Красный</label>
-                  </p>
-                  <p class="form__input-wrap">
-                    <input class="form__checkbox" id="" type="checkbox" value="pink">
-                    <label for="">Розовый</label>
-                  </p>
+                <fieldset class="filter__unit color-filter">
+                  <legend class="form__legend">Цвет</legend>
+                    <p class="form__input-wrap">
+                      <input class="form__checkbox" id="" type="checkbox" value="black" checked>
+                      <label for="">Чёрный</label>
+                    </p>
+                    <p class="form__input-wrap">
+                      <input class="form__checkbox" id="" type="checkbox" value="white">
+                      <label for="">Белый</label>
+                    </p>
+                    <p class="form__input-wrap">
+                      <input class="form__checkbox" id="" type="checkbox" value="blue" checked>
+                      <label for="">Синий</label>
+                    </p>
+                    <p class="form__input-wrap">
+                      <input class="form__checkbox" id="" type="checkbox" value="red" checked>
+                      <label for="">Красный</label>
+                    </p>
+                    <p class="form__input-wrap">
+                      <input class="form__checkbox" id="" type="checkbox" value="pink">
+                      <label for="">Розовый</label>
+                    </p>
+                </fieldset>
 
-              </fieldset>
+                <fieldset class="filter__unit bluetooth-filter">
+                  <legend class="form__legend">Bluetooth</legend>
+                    <p class="form__input-wrap">
+                      <input class="form__radio" id="" type="radio" value="yes" checked>
+                      <label for="">Есть</label>
+                    </p>
+                    <p class="form__input-wrap">
+                      <input class="form__radio" id="" type="radio" value="no">
+                      <label for="">Нет</label>
+                    </p>
+                </fieldset>
 
-              <fieldset class="catalog__filter-element filter__bluetooth">
-                <legend class="form__legend">Bluetooth</legend>
-                  <p class="form__input-wrap">
-                    <input class="form__radio" id="" type="radio" value="yes" checked>
-                    <label for="">Есть</label>
-                  </p>
-                  <p class="form__input-wrap">
-                    <input class="form__radio" id="" type="radio" value="no">
-                    <label for="">Нет</label>
-                  </p>
-              </fieldset>
+                <p class="filter__unit sumbit">
+                  <a class="sumbit__button button button--act" href="#">Показать</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </section>
 
-              <p class="catalog__filter-element filter__sumbit">
-                <a class="filter__sumbit-button button button--act" href="#">Показать</a>
-              </p>
-            </form>
-          </section>
+        <!-- Блок сортировки и списка товаров -->
+        <section class="catalog__sorting sorting">
+          <div class="sorting-wrap">
 
-          <!-- Блок каталога с сортировкой -->
-          <section class="catalog__contents contents">
+            <!-- Шапка блока сортировки -->
+            <div class="sorting__header">
 
-            <div class="contents__products products">
+              <h3 class="sorting__header-title">Сортировка:</h3>
+
+              <ul class="sorting__header-list sort-list">
+                <li class="sort-list__item sort-list__item--active">
+                  <a class="sort-list__link" href="#">По цене</a>
+                </li>
+                <li class="sort-list__item">
+                  <a class="sort-list__link" href="#">По типу</a>
+                </li>
+                <li class="sort-list__item">
+                  <a class="sort-list__link" href="#">По популярности</a>
+                </li>
+              </ul>
+
+              <ul class="sorting__header-toggles sort-toggles">
+                <li class="sort-toggles__item">
+                  <a class="sort-toggles__link" href="#">
+                    <span class="visually-hidden">По возрастанию</span>
+                  </a>
+                </li>
+                <li class="sort-toggles__item sort-toggles__item--фсешму">
+                  <a class="sort-toggles__link" href="#">
+                    <span class="visually-hidden">По убыванию</span>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+            <!-- Блок товаров с пагинацией -->
+            <div class="sorting__contents contents">
+
+              <div class="contents__products products">
               <ul class="products__list">
                 <li class="products__item product">
                   <div class="product__wrapper">
@@ -272,10 +273,13 @@
               </ul>
             </div>
 
-          </section>
-        </div>
-        </div>
+            </div>
+
+          </div>
+        </section>
+
       </div>
+
     </section>
 
   </main>
