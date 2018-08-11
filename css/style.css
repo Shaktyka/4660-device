@@ -122,15 +122,18 @@ body {
 
 /* ШАПКА САЙТА */
 
-.page-header__logo {
+.page-header__logo-wrap {
   margin: 0;
+}
 
+.page-header__logo {
   font-family: "Gilroy";
   font-size: 48px;
   line-height: 48px;
   color: #000000;
   font-weight: 800;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .main-menu {
@@ -699,15 +702,18 @@ body {
   display: flex;
 }
 
-.page-footer__logo {
+.page-footer__logo-wrap {
   margin: 0;
+}
 
+.page-footer__logo {
   font-family: "Gilroy";
   font-size: 48px;
   line-height: 48px;
   color: #ffc600;
   font-weight: 800;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .user-menu__list {
