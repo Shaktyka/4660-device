@@ -144,57 +144,58 @@
 
       <div class="catalog__content">
         <div class="container">
+          <div class="catalog__content-wrap">
 
           <!-- Блок с фильтрами -->
           <section class="catalog__filter filter">
             <form class="filter__form form" action="">
 
-              <fieldset class="form__fieldset">
-                <legend>Стоимость</legend>
-                  <div>
+              <fieldset class="catalog__filter-element filter__price">
+                <legend class="form__legend">Стоимость</legend>
+                  <div class="form__range-wrap">
                     рейндж
                   </div>
               </fieldset>
 
-              <fieldset class="form__fieldset">
-                <legend>Цвет</legend>
-                  <p>
-                    <input class="checkbox" id="" type="checkbox" checked>
+              <fieldset class="catalog__filter-element filter__color">
+                <legend class="form__legend">Цвет</legend>
+                  <p class="form__input-wrap">
+                    <input class="form__checkbox" id="" type="checkbox" value="black" checked>
                     <label for="">Чёрный</label>
                   </p>
-                  <p>
-                    <input class="checkbox" id="" type="checkbox">
+                  <p class="form__input-wrap">
+                    <input class="form__checkbox" id="" type="checkbox" value="white">
                     <label for="">Белый</label>
                   </p>
-                  <p>
-                    <input class="checkbox" id="" type="checkbox" checked>
+                  <p class="form__input-wrap">
+                    <input class="form__checkbox" id="" type="checkbox" value="blue" checked>
                     <label for="">Синий</label>
                   </p>
-                  <p>
-                    <input class="checkbox" id="" type="checkbox" checked>
+                  <p class="form__input-wrap">
+                    <input class="form__checkbox" id="" type="checkbox" value="red" checked>
                     <label for="">Красный</label>
                   </p>
-                  <p>
-                    <input class="checkbox" id="" type="checkbox">
+                  <p class="form__input-wrap">
+                    <input class="form__checkbox" id="" type="checkbox" value="pink">
                     <label for="">Розовый</label>
                   </p>
 
               </fieldset>
 
-              <fieldset class="form__fieldset">
-                <legend>Bluetooth</legend>
-                  <p>
-                    <input class="radio" id="" type="radio" checked>
+              <fieldset class="catalog__filter-element filter__bluetooth">
+                <legend class="form__legend">Bluetooth</legend>
+                  <p class="form__input-wrap">
+                    <input class="form__radio" id="" type="radio" value="yes" checked>
                     <label for="">Есть</label>
                   </p>
-                  <p>
-                    <input class="radio" id="" type="radio">
+                  <p class="form__input-wrap">
+                    <input class="form__radio" id="" type="radio" value="no">
                     <label for="">Нет</label>
                   </p>
               </fieldset>
 
-              <p>
-                <a class="button button--act" href="#">Показать</a>
+              <p class="catalog__filter-element filter__sumbit">
+                <a class="filter__sumbit-button button button--act" href="#">Показать</a>
               </p>
             </form>
           </section>
@@ -243,7 +244,7 @@
                       <img class="product__img" src="img/prod-4.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
                     </p>
                     <div class="product__info">
-                      <h3 class="product__title">Селфи-палка 'Следуй за мной'</h3>
+                      <h3 class="product__title">Селфи-палка &laquo;Следуй за мной&raquo;</h3>
                       <p class="product__price">4900 руб.</p>
                     </div>
                   </div>
@@ -253,25 +254,26 @@
 
             <div class="contents__pagination pagination">
               <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a class="pagination__item" href="#">Назад</a>
+                <li class="pagination__item pagination__item--prev">
+                  <a class="pagination__link" href="#">Назад</a>
+                </li>
+                <li class="pagination__item pagination__item--active">
+                  <a class="pagination__link" href="#">1</a>
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__item" href="#">1</a>
+                  <a class="pagination__link" href="#">2</a>
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__item" href="#">2</a>
+                  <a class="pagination__link" href="#">3</a>
                 </li>
-                <li class="pagination__item">
-                  <a class="pagination__item" href="#">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__item" href="#">Вперёд</a>
+                <li class="pagination__item pagination__item--next">
+                  <a class="pagination__link" href="#">Вперёд</a>
                 </li>
               </ul>
             </div>
 
           </section>
+        </div>
         </div>
       </div>
     </section>
@@ -281,13 +283,16 @@
   <footer class="page-footer">
     <div class="container">
 
-      <div class="page-footer__element user-menu">
-        <p class="user-menu__logo">
+      <div class="page-footer__element">
+        <p class="page-footer__logo">
           device
         </p>
-        <ul class="user-menu__list">
+        <ul class="page-footer__user-menu user-menu__list">
           <li class="user-menu__list-element">
-            <a class="user-menu__list-link" href="#">Войти</a>
+            <a class="user-menu__list-link" href="#">Валентин Петухов</a>
+          </li>
+          <li class="user-menu__list-element">
+            <button class="user-menu__list-link user-menu__link--logout" type="button">Выйти</button>
           </li>
           <li class="user-menu__list-element">
             <a class="user-menu__list-link" href="#">Сравнить</a>
@@ -299,27 +304,27 @@
       </div>
 
       <div class="page-footer__element">
-        <p class="address">
+        <p class="page-footer__address">
           г. Москва, ул. Строителей, 15
         </p>
-        <ul class="site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Доставка</a>
+        <ul class="page-footer__menu-list menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Доставка</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Гарантия</a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Гарантия</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Контакты</a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Контакты</a>
           </li>
         </ul>
-        <p class="phone">
+        <p class="page-footer__phone">
           Тел.: +7 (495) 495-95-95
         </p>
       </div>
 
       <div class="page-footer__element">
-        <ul class="social-list">
+        <ul class="page-footer__social-list social-list">
           <li class="social-list-item">
             <a class="social-list-link" href="#">
               <span class="visually-hidden">Facebook</span>
@@ -336,8 +341,8 @@
             </a>
           </li>
         </ul>
-        <p class="copyright">
-          <img class="copyright__pic" src="/img/" alt="Логотип HTML-academy">
+        <p class="page-footer__copyright copyright">
+          <img class="copyright__pic" src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML-academy">
         </p>
       </div>
 
