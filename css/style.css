@@ -84,6 +84,18 @@ body {
   text-transform: uppercase;
 }
 
+/* ФОРМЫ */
+
+.form label {
+  display: block;
+
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 800;
+}
+
 /* ШАПКА САЙТА */
 
 .page-header__logo {
@@ -515,4 +527,27 @@ body {
 
 /* MODAL НАПИШИТЕ НАМ */
 
+.write-us__wrap:first-child {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+
 /* MODAL с картой */
+
+.map-popup__wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}

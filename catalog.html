@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
- 
+
   <header class="page-header">
     <div class="container">
       <p class="page-header__logo">
@@ -72,10 +72,10 @@
       </div>
     </div>
   </header>
-  
+
   <main class="page-catalog">
     <h1 class="visually-hidden">Каталог товаров Device</h1>
-    
+
     <div class="catalog-header">
       <div class="container">
         <h2 class="catalog-header__title">Моноподы для селфи</h2>
@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
-    
+
     <section class="catalog">
       <div class="catalog__header">
         <div class="container">
@@ -129,21 +129,21 @@
           </div>
         </div>
       </div>
-     
+
       <div class="catalog__content">
         <div class="container">
-      
+
           <!-- Блок с фильтрами -->
           <section class="catalog__filter filter">
             <form class="filter__form form" action="">
-             
+
               <fieldset class="form__fieldset">
                 <legend>Стоимость</legend>
                   <div>
                     рейндж
                   </div>
               </fieldset>
-              
+
               <fieldset class="form__fieldset">
                 <legend>Цвет</legend>
                   <p>
@@ -166,9 +166,9 @@
                     <input class="checkbox" id="" type="checkbox">
                     <label for="">Розовый</label>
                   </p>
-                
+
               </fieldset>
-              
+
               <fieldset class="form__fieldset">
                 <legend>Bluetooth</legend>
                   <p>
@@ -180,16 +180,16 @@
                     <label for="">Нет</label>
                   </p>
               </fieldset>
-              
+
               <p>
                 <a href="#">Показать</a>
               </p>
             </form>
           </section>
-      
+
           <!-- Блок каталога с сортировкой -->
           <section class="catalog__contents contents">
-           
+
             <div class="contents__products products">
               <ul class="products__list">
                 <li class="products__item product">
@@ -230,7 +230,7 @@
                 </li>
               </ul>
             </div>
-            
+
             <div class="contents__pagination pagination">
               <ul class="pagination__list">
                 <li class="pagination__item">
@@ -250,14 +250,14 @@
                 </li>
               </ul>
             </div>
-            
+
           </section>
         </div>
       </div>
     </section>
-    
+
   </main>
-  
+
   <footer class="page-footer">
     <div class="container">
 
@@ -323,42 +323,53 @@
 
     </div>
   </footer>
-  
+
   <!-- Всплывающее окно Напишите нам -->
-  <section class="popup write-us">
-    <button class="write-us__close button button--close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  <section class="modal write-us">
+
+    <button class="modal__close button button--close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+
     <h2 class="visually-hidden">Напишите нам</h2>
+
     <form class="write-us__form form" action="">
+
       <div class="write-us__wrap">
-        <p class="input-wrap">
-          <label for="name">Ваше имя:</label>
-          <input class="text-input" id="name" type="text" placeholder="Имя Фамилия">
+        <p class="form__input-wrap">
+          <label class="form__label" for="name">Ваше имя:</label>
+          <input class="write-us__name form__text-input" id="name" type="text" placeholder="Имя Фамилия">
         </p>
-        <p class="input-wrap">
-          <label for="email">Ваш e-mail:</label>
-          <input class="text-input" type="email" placeholder="email@example.com">
+        <p class="form__input-wrap">
+          <label class="form__label" for="email">Ваш e-mail:</label>
+          <input class="write-us__email form__text-input" type="email" placeholder="email@example.com">
         </p>
       </div>
+
       <div class="write-us__wrap">
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="message" cols="30" rows="10">В свободной форме</textarea>
+        <label class="form__label" for="message">Текст письма:</label>
+        <textarea class="write-us__message form__textarea" name="message" id="message" cols="30" rows="10">В свободной форме</textarea>
         <p class="write-us__submit-wrap">
-          <button class="write-us__submit button" type="submit">Отправить</button>
+          <button class="write-us__submit button button--act" type="submit">Отправить</button>
         </p>
       </div>
+
     </form>
+
   </section>
 
   <!-- Всплывающее окно с большим изображением карты -->
-  <section class="popup map-popup">
-    <button class="map-popup__close button button--close" type="button">
+  <section class="modal map-popup">
+
+    <button class="modal__close button button--close" type="button">
       <span class="visually-hidden">Закрыть</span>
     </button>
+
     <h2 class="visually-hidden">Интерактивная карта: где мы находимся</h2>
     <p class="map-popup__wrap">
-      <img class="map-popup__img" src="" width="" height="" alt="Где мы находимся">
+      <img class="map-popup__img" src="img/map-full.jpg" width="960" height="559" alt="Где мы находимся: г. Москва, ул. Строителей, 15">
     </p>
   </section>
-  
+
 </body>
 </html>

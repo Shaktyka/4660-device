@@ -436,37 +436,48 @@
 
   <!-- Всплывающее окно Напишите нам -->
   <section class="modal write-us">
-    <button class="modal__close button button--close" type="button"><span class="visually-hidden">Закрыть</span></button>
+
+    <button class="modal__close button button--close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+
     <h2 class="visually-hidden">Напишите нам</h2>
+
     <form class="write-us__form form" action="">
+
       <div class="write-us__wrap">
-        <p class="input-wrap">
-          <label for="name">Ваше имя:</label>
-          <input class="text-input" id="name" type="text" placeholder="Имя Фамилия">
+        <p class="form__input-wrap">
+          <label class="form__label" for="name">Ваше имя:</label>
+          <input class="write-us__name form__text-input" id="name" type="text" placeholder="Имя Фамилия">
         </p>
-        <p class="input-wrap">
-          <label for="email">Ваш e-mail:</label>
-          <input class="text-input" type="email" placeholder="email@example.com">
+        <p class="form__input-wrap">
+          <label class="form__label" for="email">Ваш e-mail:</label>
+          <input class="write-us__email form__text-input" type="email" placeholder="email@example.com">
         </p>
       </div>
+
       <div class="write-us__wrap">
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="message" cols="30" rows="10">В свободной форме</textarea>
+        <label class="form__label" for="message">Текст письма:</label>
+        <textarea class="write-us__message form__textarea" name="message" id="message" cols="30" rows="10">В свободной форме</textarea>
         <p class="write-us__submit-wrap">
-          <button class="write-us__submit button" type="submit">Отправить</button>
+          <button class="write-us__submit button button--act" type="submit">Отправить</button>
         </p>
       </div>
+
     </form>
+
   </section>
 
   <!-- Всплывающее окно с большим изображением карты -->
   <section class="modal map-popup">
+
     <button class="modal__close button button--close" type="button">
       <span class="visually-hidden">Закрыть</span>
     </button>
+
     <h2 class="visually-hidden">Интерактивная карта: где мы находимся</h2>
     <p class="map-popup__wrap">
-      <img class="map-popup__img" src="" width="" height="" alt="Где мы находимся">
+      <img class="map-popup__img" src="img/map-full.jpg" width="960" height="559" alt="Где мы находимся: г. Москва, ул. Строителей, 15">
     </p>
   </section>
 
