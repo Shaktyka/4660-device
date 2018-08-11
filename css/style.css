@@ -129,8 +129,14 @@ body {
 }
 
 .user-menu__link {
-  color: inherit;
+  color: #000000;
   text-decoration: none;
+}
+
+.user-menu__link--logout {
+  background-color: transparent;
+  opacity: 0.3;
+  border-width: 0px;
 }
 
 .user-menu__link:first-child {
@@ -435,6 +441,187 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* ЗАГОЛОВКИ СТРАНИЦЫ КАТАЛОГА */
+
+.catalog-header__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy";
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.breadcrumbs__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ХЛЕБНЫЕ КРОШКИ */
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+/* КАТАЛОГ ФИЛЬТР */
+
+.catalog__filter-title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 800;
+}
+
+/* КАТАЛОГ СОРТИРОВКА */
+
+.catalog__sort-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.catalog__sort-title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.sort-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort-list__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+.sort-list__item--active a {
+  opacity: 1;
+}
+
+.sort-toggles {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort-toggles__item {
+  width: 11px;
+  height: 10px;
+  background-color: yellow;
+}
+
+/* КАТАЛОГ ТОВАРЫ */
+
+.products__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 800px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products__item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.product__img-wrap {
+  display: flex;
+  width: 360px;
+  height: 380px;
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+}
+
+.product__info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.product:nth-child(2) .product__title {
+  width: 180px;
+}
+
+.product:nth-child(4) .product__title {
+  width: 225px;
+}
+
+.product__price {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
+  font-weight: 300;
+}
+
+/* ПАГИНАТОР */
 
 /* ФУТЕР */
 

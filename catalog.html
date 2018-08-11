@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
-<body>
+<body class="catalog-page">
 
   <header class="page-header">
     <div class="container">
@@ -14,22 +14,27 @@
         device
       </p>
 
-      <div class="page-header__user-menu user-menu">
-          <div class="user-menu__list-element">
-            <a class="user-menu__list-link" href="#">Поиск по сайту</a>
-          </div>
-          <div class="user-menu__list-element">
-            <a class="user-menu__list-link" href="#">Валентин Петухов</a>
-          </div>
-          <div>
-            <button class="user-menu__list-exit" type="button">Выйти</button>
-          </div>
-          <div class="user-menu__list-element">
-            <a class="user-menu__list-link" href="#">Сравнить</a>
-          </div>
-          <div class="user-menu__list-element">
-            <a class="user-menu__list-link" href="#">Корзина</a>
-          </div>
+      <div class="page-header__menu main-menu">
+
+        <div class="main-menu__search">
+          <a class="main-menu__search-link" href="#">Поиск по сайту</a>
+        </div>
+
+        <ul class="main-menu__user-menu user-menu">
+          <li class="user-menu__element">
+            <a class="user-menu__link" href="#">Валентин Петухов</a>
+          </li>
+          <li class="user-menu__element">
+            <button class="user-menu__link user-menu__link--logout" type="button">Выйти</button>
+          </li>
+          <li class="user-menu__element">
+            <a class="user-menu__link" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu__element">
+            <a class="user-menu__link" href="#">Корзина</a>
+          </li>
+        </ul>
+
       </div>
 
       <div class="page-header__nav navigation">
@@ -73,7 +78,8 @@
     </div>
   </header>
 
-  <main class="page-catalog">
+  <main class="page-inner">
+
     <h1 class="visually-hidden">Каталог товаров Device</h1>
 
     <div class="catalog-header">
@@ -98,11 +104,15 @@
     <section class="catalog">
       <div class="catalog__header">
         <div class="container">
+
           <div class="catalog__filter-header">
             <h3 class="catalog__filter-title">Фильтр:</h3>
           </div>
+
           <div class="catalog__sort-header">
+
             <h3 class="catalog__sort-title">Сортировка:</h3>
+
             <ul class="catalog__sort-list sort-list">
               <li class="sort-list__item sort-list__item--active">
                 <a class="sort-list__link" href="#">По цене</a>
@@ -114,18 +124,20 @@
                 <a class="sort-list__link" href="#">По популярности</a>
               </li>
             </ul>
+
             <ul class="catalog__sort-toggles sort-toggles">
               <li class="sort-toggles__item">
                 <a class="sort-toggles__link" href="#">
-                  <span>По возрастанию</span>
+                  <span class="visually-hidden">По возрастанию</span>
                 </a>
               </li>
               <li class="sort-toggles__item sort-toggles__item--фсешму">
                 <a class="sort-toggles__link" href="#">
-                  <span>По убыванию</span>
+                  <span class="visually-hidden">По убыванию</span>
                 </a>
               </li>
             </ul>
+
           </div>
         </div>
       </div>
@@ -182,7 +194,7 @@
               </fieldset>
 
               <p>
-                <a href="#">Показать</a>
+                <a class="button button--act" href="#">Показать</a>
               </p>
             </form>
           </section>
@@ -193,39 +205,47 @@
             <div class="contents__products products">
               <ul class="products__list">
                 <li class="products__item product">
-                  <p class="product__img-wrap">
-                    <img class="product__img" src="" width="" height="" alt="Любительская селфи-палка">
-                  </p>
-                  <div class="product__info">
-                    <h3 class="product__title">Любительская селфи-палка</h3>
-                    <p class="product__price">500 руб.</p>
+                  <div class="product__wrapper">
+                    <p class="product__img-wrap">
+                      <img class="product__img" src="img/prod-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    </p>
+                    <div class="product__info">
+                      <h3 class="product__title">Любительская селфи-палка</h3>
+                      <p class="product__price">500 руб.</p>
+                    </div>
                   </div>
                 </li>
                 <li class="products__item product">
-                  <p class="product__img-wrap">
-                    <img class="product__img" src="" width="" height="" alt="Профессиональная селфи-палка">
-                  </p>
-                  <div class="product__info">
-                    <h3 class="product__title">Профессиональная селфи-палка</h3>
-                    <p class="product__price">1500 руб.</p>
+                  <div class="product__wrapper">
+                    <p class="product__img-wrap">
+                      <img class="product__img" src="img/prod-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                    </p>
+                    <div class="product__info">
+                      <h3 class="product__title">Профессиональная селфи-палка</h3>
+                      <p class="product__price">1500 руб.</p>
+                    </div>
                   </div>
                 </li>
                 <li class="products__item product">
-                  <p class="product__img-wrap">
-                    <img class="product__img" src="" width="" height="" alt="Непотопляемая селфи-палка">
-                  </p>
-                  <div class="product__info">
-                    <h3 class="product__title">Непотопляемая селфи-палка</h3>
-                    <p class="product__price">2500 руб.</p>
+                  <div class="product__wrapper">
+                    <p class="product__img-wrap">
+                      <img class="product__img" src="img/prod-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    </p>
+                    <div class="product__info">
+                      <h3 class="product__title">Непотопляемая селфи-палка</h3>
+                      <p class="product__price">2500 руб.</p>
+                    </div>
                   </div>
                 </li>
                 <li class="products__item product">
-                  <p class="product__img-wrap">
-                    <img class="product__img" src="" width="" height="" alt="Селфи-палка 'Следуй за мной'">
-                  </p>
-                  <div class="product__info">
-                    <h3 class="product__title">Селфи-палка 'Следуй за мной'</h3>
-                    <p class="product__price">4900 руб.</p>
+                  <div class="product__wrapper">
+                    <p class="product__img-wrap">
+                      <img class="product__img" src="img/prod-4.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
+                    </p>
+                    <div class="product__info">
+                      <h3 class="product__title">Селфи-палка 'Следуй за мной'</h3>
+                      <p class="product__price">4900 руб.</p>
+                    </div>
                   </div>
                 </li>
               </ul>
