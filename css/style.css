@@ -132,15 +132,25 @@ body {
 /* ШАПКА САЙТА */
 
 .page-header {
-  /* какие-то стили */
+  padding-top: 40px;
 }
 
 .page-header__wrap {
+  position: relative;
   width: 1160px;
+  min-height: 300px;
+  box-sizing: border-box;
+
+  padding-top: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
+
   background-color: rgba(240, 197, 46, 0.5);
 }
 
 .page-header__logo-wrap {
+  position: absolute;
+  top: -18px;
   margin: 0;
 }
 
@@ -157,6 +167,11 @@ body {
 .main-menu {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header__menu {
+  margin-bottom: 50px;
 }
 
 .main-menu__search-link {
@@ -168,9 +183,18 @@ body {
 .user-menu {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+
+  width: 500px;
   margin: 0;
   padding: 0;
+
   list-style: none;
+  background-color: yellow;
+}
+
+.user-menu__element:first-child {
+  margin-right: auto;
 }
 
 .user-menu__link {
@@ -223,9 +247,19 @@ body {
 
 /* ВЕРХНИЙ СЛАЙДЕР */
 
-.slider__header {
+.promo {
+  background-color: yellow;
+  margin-bottom: 95px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__title {
   width: 400px;
   margin: 0;
+  margin-bottom: 28px;
 
   font-family: "Gilroy";
   font-size: 47px;
@@ -245,6 +279,10 @@ body {
   display: none;
 }
 
+.promo-slide--1 .slider__img-wrap {
+  padding-left: 90px;
+}
+
 .promo-slide__wrap {
   display: -webkit-flex;
   display: -moz-flex;
@@ -256,6 +294,7 @@ body {
   -ms-flex-direction: row;
   -o-flex-direction: row;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .slider__img-wrap {
@@ -264,11 +303,22 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+}
+
+.promo-slide__description {
+  width: 500px;
+  margin-right: 60px;
+  padding-top: 90px;
 }
 
 .slider__text {
   width: 480px;
   margin: 0;
+  margin-bottom: 80px;
   padding: 0;
 }
 
@@ -286,6 +336,12 @@ body {
   font-size: 36px;
   line-height: 48px;
   color: #000000;
+}
+
+.controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .controls__list {
@@ -817,7 +873,7 @@ body {
 
 .modal {
   display: none;
-} 
+}
 
 /* MODAL НАПИШИТЕ НАМ */
 
