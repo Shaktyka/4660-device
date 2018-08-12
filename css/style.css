@@ -164,6 +164,14 @@ body {
   text-decoration: none;
 }
 
+.page-header__logo[href]:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo[href]:active {
+  opacity: 0.3;
+}
+
 .main-menu {
   display: flex;
   flex-direction: row;
@@ -327,12 +335,26 @@ body {
   padding: 0;
 }
 
-.slider__row th {
+.slider__parameters {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.slider__parameters-row:nth-child(2) {
+  order: 1;
+}
+
+.slider__parameters-row th {
   font-size: 13px;
   line-height: 20px;
 }
 
-.slider__row td {
+.slider__parameters-row td {
   font-size: 36px;
   line-height: 48px;
   color: #000000;
@@ -461,6 +483,12 @@ body {
 
 .logotype__link {
   display: flex;
+  width: 260px;
+  height: 100px;
+}
+
+.logotype__image {
+  opacity: 0.2;
 }
 
 /* РАЗДЕЛ ИНФО */
