@@ -77,6 +77,9 @@ body {
 
 .button {
   text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
 }
 
 .button--act {
@@ -89,6 +92,20 @@ body {
   color: #000000;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.button--search {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 85px;
+  height: 49px;
+  background-color: transparent;
+
+  color: #000000;
+
+  border: 2px solid #000000;
 }
 
 /* ФОРМЫ */
@@ -164,7 +181,8 @@ body {
   text-decoration: none;
 }
 
-.page-header__logo[href]:hover {
+.page-header__logo[href]:hover,
+.page-header__logo[href]:focus {
   opacity: 0.6;
 }
 
@@ -182,10 +200,37 @@ body {
   margin-bottom: 50px;
 }
 
+.main-menu__search {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 440px;
+
+  border-bottom: 2px solid transparent;
+}
+
+.main-menu__search {
+/* код */
+}
+
 .main-menu__search-link {
   color: #000000;
   opacity: 0.3;
   text-decoration: none;
+}
+
+.main-menu__search-link:hover {
+  opacity: 0.6;
+}
+
+.main-menu__search-link:focus {
+  opacity: 1;
+}
+
+.main-menu__search-button {
+  margin-left: auto;
 }
 
 .user-menu {
@@ -208,6 +253,15 @@ body {
 .user-menu__link {
   color: #000000;
   text-decoration: none;
+}
+
+.user-menu__link:hover,
+.user-menu__link:focus {
+  opacity: 0.6;
+}
+
+.user-menu__link:active {
+  opacity: 0.6;
 }
 
 .user-menu__link--logout {
@@ -237,6 +291,15 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 /*  letter-spacing: 200;*/
+}
+
+.navigation-list__link:hover,
+.navigation-list__link:focus {
+  opacity: 0.6;
+}
+
+.navigation-list__link:active {
+  opacity: 0.3;
 }
 
 /* ВЫПАДАЮЩЕЕ МЕНЮ */
