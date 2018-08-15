@@ -252,11 +252,21 @@ body {
   background-color: yellow;
 }
 
+.user-menu__element {
+  width: 100px;
+}
+
 .user-menu__element:first-child {
   margin-right: auto;
 }
 
+.user-menu__element:nth-child(3) {
+  margin-left: 41px;
+}
+
 .user-menu__link {
+  display: inline-block;
+  width: 100px;
   color: #000000;
   text-decoration: none;
   letter-spacing: 0.01em;
@@ -284,12 +294,15 @@ body {
 .navigation-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .navigation-list__link {
+  display: inline-block;
   font-family: "Gilroy";
   font-size: 18px;
   line-height: 24px;
@@ -298,6 +311,43 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.navigation-list__item:nth-child(1) {
+  width: 300px;
+  margin-right: auto;
+}
+
+.navigation-list__link--catalog {
+  position: relative;
+  padding-right: 33px;
+}
+
+.navigation-list__link--catalog::after {
+  position: absolute;
+  content: '';
+  top: 4px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/plus.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.navigation-list__item:nth-child(2) {
+  width: 123px;
+}
+
+.navigation-list__item:nth-child(3) {
+  width: 140px;
+  margin-left: 40px;
+}
+
+.navigation-list__item:nth-child(4) {
+  width: 140px;
+  margin-left: 60px;
 }
 
 .navigation-list__link:hover,
