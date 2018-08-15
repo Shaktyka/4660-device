@@ -49,6 +49,7 @@ body {
   line-height: 30px;
   color: #464646;
   font-weight: 300;
+  letter-spacing: 0.01em;
 }
 
 .container {
@@ -92,6 +93,7 @@ body {
   color: #000000;
   font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .button--search {
@@ -104,6 +106,7 @@ body {
   background-color: transparent;
 
   color: #000000;
+  letter-spacing: 0.01em;
 
   border: 2px solid #000000;
 }
@@ -219,6 +222,7 @@ body {
   color: #000000;
   opacity: 0.3;
   text-decoration: none;
+  letter-spacing: 0.01em;
 }
 
 .main-menu__search-link:hover {
@@ -253,6 +257,7 @@ body {
 .user-menu__link {
   color: #000000;
   text-decoration: none;
+  letter-spacing: 0.01em;
 }
 
 .user-menu__link:hover,
@@ -290,7 +295,7 @@ body {
   font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
-/*  letter-spacing: 200;*/
+  letter-spacing: 0.2em;
 }
 
 .navigation-list__link:hover,
@@ -337,6 +342,7 @@ body {
   line-height: 56px;
   color: #000000;
   font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .slider__list {
@@ -415,12 +421,14 @@ body {
 .slider__parameters-row th {
   font-size: 13px;
   line-height: 20px;
+  letter-spacing: 0.01em;
 }
 
 .slider__parameters-row td {
   font-size: 36px;
   line-height: 48px;
   color: #000000;
+  letter-spacing: 0.01em;
 }
 
 .controls {
@@ -477,6 +485,7 @@ body {
   line-height: 24px;
   color: #000000;
   font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 /* РАЗДЕЛ SERVICES */
@@ -503,6 +512,7 @@ body {
   line-height: 24px;
   color: #000000;
   font-weight: 800;
+  letter-spacing: 0.2em;
   text-decoration: none;
 }
 
@@ -572,6 +582,7 @@ body {
   line-height: 48px;
   color: #000000;
   font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .about__paragraph {
@@ -597,6 +608,7 @@ body {
   line-height: 40px;
   color: #000000;
   font-weight: 800;
+  letter-spacing: 0em;
 }
 
 /* КОНТАКТЫ */
@@ -610,6 +622,7 @@ body {
   line-height: 48px;
   color: #000000;
   font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .contacts__text {
@@ -903,6 +916,7 @@ body {
 .user-menu__list-link {
   line-height: 36px;
   color: #ffffff;
+  letter-spacing: 0.01em;
   text-decoration: none;
 }
 
@@ -910,12 +924,14 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
+  letter-spacing: 0em;
 }
 
 .page-footer__phone {
   margin: 0;
   padding: 0;
   color: #ffffff;
+  letter-spacing: 0em;
 }
 
 .menu-list {
@@ -932,6 +948,7 @@ body {
   line-height: 24px;
   color: #ffffff;
   font-weight: 800;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
 }
