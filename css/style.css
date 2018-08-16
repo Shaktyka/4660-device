@@ -569,8 +569,9 @@ body {
 /* РАЗДЕЛ SERVICES */
 
 .services {
-  background-color: #e5e5e5;
-  /* тут потом градиент прописать */
+  min-height: 388px;
+/*  background-color: #e5e5e5;*/
+  background-image: linear-gradient(180deg, #ffffff 26%, #e5e5e5 26%);
 }
 
 .services__wrap {
@@ -579,9 +580,12 @@ body {
 }
 
 .services__toggles-list {
+  width: 277px;
   margin: 0;
   padding: 0;
+  padding-top: 80px;
   list-style: none;
+  border-right: 7px solid #000000;
 }
 
 .services__toggles-toggle {
@@ -600,6 +604,10 @@ body {
   list-style: none;
 }
 
+.services__slider-wrap {
+  padding-top: 75px;
+}
+
 .slide--2,
 .slide--3 {
   display: none;
@@ -607,6 +615,7 @@ body {
 
 .slide__title {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 
   font-family: "Gilroy";
