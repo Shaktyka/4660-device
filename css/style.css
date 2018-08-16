@@ -503,6 +503,10 @@ body {
 
 /* РАЗДЕЛ SHOP-SECTIONS */
 
+.shop-sections {
+  margin-bottom: 80px; 
+}
+
 .shop-sections__list {
   display: flex;
   flex-direction: row;
