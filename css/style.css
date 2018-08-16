@@ -520,6 +520,11 @@ body {
 }
 
 .section__pic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
   width: 160px;
   height: 160px;
   margin: 0;
@@ -529,6 +534,19 @@ body {
 
 .section__link {
   text-decoration: none;
+}
+
+.section__link:hover .section__pic,
+.section__link:active .section__pic {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.section__link:active .section__title {
+  opacity: 0.3;
+}
+
+.section__link:active svg {
+  opacity: 0.3;
 }
 
 .section__title {
