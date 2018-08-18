@@ -539,7 +539,7 @@ body {
 }
 
 .drop-menu__item:nth-child(6) {
-  height: 50px;
+  height: 37px;
 }
 
 .drop-menu__link {
@@ -547,6 +547,14 @@ body {
   color: #000000;
   letter-spacing: 0.01em;
   text-decoration: none;
+}
+
+.drop-menu__link:hover {
+  opacity: 0.6;
+}
+
+.drop-menu__link:active {
+  opacity: 0.3;
 }
 
 /* ВЕРХНИЙ СЛАЙДЕР */
