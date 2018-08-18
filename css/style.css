@@ -498,7 +498,7 @@ body {
   background-color: #ffffff;
 }
 
-.promo-slide--1 .slider__title::after {
+.promo-slide .slider__title::after {
   position: absolute;
   content: '01';
   top: -115px;
@@ -512,6 +512,14 @@ body {
   color: #ffffff;
   font-weight: 800;
   letter-spacing: 0.01em;
+}
+
+.promo-slide--2 .slider__title::after {
+  content: '02';
+}
+
+.promo-slide--3 .slider__title::after {
+  content: '03';
 }
 
 .slider__list {
