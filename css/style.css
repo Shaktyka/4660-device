@@ -1165,14 +1165,12 @@ body {
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
-.map-popup {
-  display: none;
-}
-
 /* MODAL НАПИШИТЕ НАМ */
 
 .write-us {
+  display: none;
   position: relative;
+
   width: 960px;
   min-height: 555px;
   padding: 100px 100px 85px 100px;
@@ -1232,7 +1230,7 @@ body {
 
 .modal__close {
   position: absolute;
-  top: 23px;
+  top: 22px;
   right: 22px;
 }
 
@@ -1255,12 +1253,39 @@ body {
 
 /* MODAL с картой */
 
+.map-popup {
+  position: relative;
+  display: block;
+  width: 960px;
+  height: 560px;
+
+  z-index: 100;
+}
+
 .map-popup__wrap {
+  position: absolute;
+
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
+  background-color: #e9e9e9;
+
+  z-index: 100;
+}
+
+.map-popup iframe {
+  position: relative;
+  border: none;
+  z-index: 101;
+}
+
+.map-popup .modal__close {
+  z-index: 102;
 }
