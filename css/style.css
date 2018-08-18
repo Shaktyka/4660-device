@@ -34,8 +34,14 @@
 
 /* ОБЩИЕ СТИЛИ */
 
+/*
 * {
   outline: 1px solid lightgray;
+}
+*/
+
+:focus {
+  outline: 2px solid red;
 }
 
 html,
@@ -768,6 +774,7 @@ body {
 }
 
 .section__link:hover .section__pic,
+.section__link:focus .section__pic,
 .section__link:active .section__pic {
   background-color: rgba(240, 197, 46, 1);
 }
@@ -1331,8 +1338,12 @@ body {
 .page-footer__phone {
   margin: 0;
   padding: 0;
+}
+
+.page-footer__phone a {
   color: #ffffff;
   letter-spacing: 0em;
+  text-decoration: none;
 }
 
 .menu-list {
