@@ -84,8 +84,9 @@ body {
 }
 
 .button--act {
+  width: 220px;
+  min-height: 40px;
   background-color: transparent;
-  border-width: 0px;
 
   font-family: "Gilroy";
   font-size: 18px;
@@ -94,6 +95,9 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+
+  border-width: 0px;
+  outline: 1px solid red;
 }
 
 .button--search {
@@ -125,7 +129,7 @@ body {
   letter-spacing: 0.01em;
 }
 
-.form label {
+.form__label {
   display: block;
 
   font-family: "Gilroy";
@@ -143,12 +147,55 @@ body {
   padding: 0;
 }
 
+/*
 .form__input-wrap label {
   font-family: "OpenSans";
   font-size: 14px;
   line-height: 40px;
   color: #000000;
   font-weight: 300;
+}
+*/
+
+.form__text-input {
+  box-sizing: border-box;
+  width: 360px;
+  height: 50px;
+  background-color: rgba(230, 230, 230, 0.5);
+
+  padding: 17px 19px 16px;
+
+  border: 3px solid #f2f2f2;
+}
+
+.form__textarea {
+  box-sizing: border-box;
+  background-color: rgba(230, 230, 230, 0.5);
+
+  padding: 17px 19px 16px;
+
+  border: 3px solid #f2f2f2;
+  resize: none;
+}
+
+.form__text-input:hover,
+.form__text-input:hover,
+.form__textarea:hover {
+  background-color: rgba(230, 230, 230, 0.8);
+  border: 3px solid #eaeaea;
+}
+
+.form__text-input:focus,
+.form__text-input:focus,
+.form__textarea:focus{
+  outline: none;
+  background-color: rgba(255, 255, 255, 1);
+  border: 3px solid rgba(240, 197, 46, 0.5);
+}
+
+:invalid {
+  background-color: rgba(237, 181, 181, 0.5);
+  border: 3px solid #f6dada;
 }
 
 /* ШАПКА САЙТА */
@@ -223,11 +270,11 @@ body {
 .main-menu__search-field {
   margin-bottom: 0;
   background-color: transparent;
-  
+
   color: #000000;
   opacity: 0.3;
   letter-spacing: 0.01em;
-  
+
   border-width: 0;
 }
 
@@ -273,7 +320,7 @@ body {
   display: inline-block;
   width: 100px;
   box-sizing: border-box;
-  
+
   color: #000000;
   text-decoration: none;
   letter-spacing: 0.01em;
@@ -543,7 +590,7 @@ body {
 /* РАЗДЕЛ SHOP-SECTIONS */
 
 .shop-sections {
-  margin-bottom: 80px; 
+  margin-bottom: 80px;
 }
 
 .shop-sections__list {
@@ -567,7 +614,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
+
   width: 160px;
   height: 160px;
   margin: 0;
@@ -1114,10 +1161,23 @@ body {
 /* МОДАЛКИ */
 
 .modal {
+  position: fixed;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+
+.map-popup {
   display: none;
 }
 
 /* MODAL НАПИШИТЕ НАМ */
+
+.write-us {
+  position: relative;
+  width: 960px;
+  min-height: 555px;
+  padding: 100px 100px 85px 100px;
+  box-sizing: border-box;
+}
 
 .write-us__wrap:first-child {
   display: -webkit-flex;
@@ -1125,11 +1185,72 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   -ms-flex-direction: row;
   -o-flex-direction: row;
   flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+}
+
+.write-us__wrap:nth-child(2) {
+  margin-bottom: 50px;
+}
+
+.form__input-wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.write-us .form__label {
+  margin-bottom: 9px;
+}
+
+.write-us__submit-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.write-us__submit {
+  width: 200px;
+}
+
+.write-us__message {
+  width: 760px;
+  height: 156px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 23px;
+  right: 22px;
+}
+
+.button--close {
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+  background-image: url('../img/modal-close.svg');
+  opacity: 0.5;
+  border: none;
+}
+
+.button--close:hover {
+  opacity: 1;
+}
+
+.button--close:active {
+  opacity: 0.3;
 }
 
 /* MODAL с картой */
