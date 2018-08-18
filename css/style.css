@@ -79,14 +79,19 @@ body {
 .button {
   text-decoration: none;
   display: inline-block;
+
   vertical-align: top;
   text-align: center;
+
+  background-color: transparent;
+  border-width: 0px;
+
+  cursor: pointer;
 }
 
 .button--act {
   width: 220px;
   min-height: 40px;
-  background-color: transparent;
 
   font-family: "Gilroy";
   font-size: 18px;
@@ -96,7 +101,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 
-  border-width: 0px;
   outline: 1px solid red;
 }
 
@@ -113,6 +117,14 @@ body {
   letter-spacing: 0.01em;
 
   border: 2px solid #000000;
+}
+
+.button--control {
+  width: 12px;
+  height: 12px;
+  background-image: url('../img/slider-button-empty.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /* ФОРМЫ */
@@ -572,7 +584,7 @@ body {
 .slider__text {
   width: 480px;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 55px;
   padding: 0;
 }
 
@@ -610,16 +622,28 @@ body {
 
 .controls {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 60px;
+  bottom: 150px;
 }
 
 .controls__list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 78px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.controls__element {
+  height: 12px;
+}
+
+.controls__element--active .button--control {
+  background-image: url('../img/slider-button.svg');
+  background-repeat: no-repeat;
 }
 
 /* РАЗДЕЛ SHOP-SECTIONS */
