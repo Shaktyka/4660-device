@@ -34,11 +34,9 @@
 
 /* ОБЩИЕ СТИЛИ */
 
-/*
 * {
   outline: 1px solid lightgray;
 }
-*/
 
 :focus {
   outline: 2px solid red;
@@ -223,6 +221,7 @@ body {
 
 .page-header {
   padding-top: 40px;
+  margin-bottom: 38px;
 }
 
 .page-header__wrap {
@@ -520,7 +519,8 @@ body {
   z-index: 10;
 }
 
-.navigation-list__item:hover .navigation-list__drop {
+.navigation-list__item:hover .navigation-list__drop,
+.navigation-list__item:focus .navigation-list__drop{
   display: block;
 }
 
