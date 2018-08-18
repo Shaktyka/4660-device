@@ -656,8 +656,8 @@ body {
 
 .services {
   min-height: 388px;
-/*  background-color: #e5e5e5;*/
   background-image: linear-gradient(180deg, #ffffff 26%, #e5e5e5 26%);
+  margin-bottom: 95px;
 }
 
 .services__wrap {
@@ -720,16 +720,25 @@ body {
 /* РАЗДЕЛ ЛОГОТИПОВ */
 
 .logotypes {
-  background-color: azure;
   margin-bottom: 94px;
 }
 
 .logotypes__list {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.logotypes__item {
+  margin-right: 40px;
+}
+
+.logotypes__item:last-child {
+  margin-right: 0;
 }
 
 .logotype__link {
@@ -751,6 +760,8 @@ body {
 .info__wrap {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* РАЗДЕЛ О НАС */
