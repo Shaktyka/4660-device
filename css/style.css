@@ -1116,6 +1116,7 @@ body {
 
 .catalog-header__title {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 
   font-family: "Gilroy";
@@ -1128,6 +1129,10 @@ body {
 
 /* ХЛЕБНЫЕ КРОШКИ */
 
+.catalog-header__breadcrumbs {
+  margin-bottom: 49px;
+}
+
 .breadcrumbs__list {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1139,7 +1144,19 @@ body {
   list-style: none;
 }
 
+.breadcrumbs__item {
+  padding-right: 40px;
+}
+
+.breadcrumbs__item:last-child {
+  padding-right: 0;
+}
+
 .breadcrumbs__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  
   font-size: 14px;
   line-height: 24px;
   color: #000000;
@@ -1147,6 +1164,21 @@ body {
   text-decoration: none;
   letter-spacing: 0.01em;
 }
+
+.breadcrumbs__item:nth-child(1) a::after,
+.breadcrumbs__item:nth-child(2) a::after {
+  position: absolute;
+  content: '';
+  top: 9px;
+  right: -18px;
+  width: 4px;
+  height: 7px;
+  background-image: url('../img/nav-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
 
 /* ФИЛЬТР */
 
@@ -1165,6 +1197,7 @@ body {
 }
 
 .filter__header {
+  min-height: 70px;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
@@ -1190,6 +1223,7 @@ body {
   display: -o-flex;
   display: flex;
   background-color: rgba(0, 0, 0, 0.08);
+  min-height: 70px;
 }
 
 .sorting__header-title {
@@ -1241,6 +1275,12 @@ body {
 }
 
 .sort-toggles__item {
+/* стили */
+}
+
+.sort-toggles__link {
+  display: inline-block;
+  vertical-align: top;
   width: 11px;
   height: 10px;
   background-color: yellow;
