@@ -815,6 +815,7 @@ body {
 }
 
 .services__toggles-list {
+  box-sizing: border-box;
   width: 277px;
   margin: 0;
   padding: 0;
@@ -823,14 +824,34 @@ body {
   border-right: 7px solid #000000;
 }
 
+.services__toggles-element {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 25px;
+}
+
 .services__toggles-toggle {
+  display: flex;
+  justify-content: center;
+  width: 160px;
+
   font-family: "Gilroy";
   font-size: 18px;
   line-height: 24px;
   color: #000000;
   font-weight: 800;
   letter-spacing: 0.2em;
+
   text-decoration: none;
+}
+
+.services__toggles-element--active {
+  background-color: #000000;
+}
+
+.services__toggles-element--active a  {
+  color: #f0c52e;
 }
 
 .services__slider-list {
@@ -839,8 +860,46 @@ body {
   list-style: none;
 }
 
+.services__slider-element {
+  padding-left: 117px;
+}
+
 .services__slider-wrap {
+  position: relative;
   padding-top: 75px;
+}
+
+.slide .services__slider-wrap::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slide--1 .services__slider-wrap::after {
+  top: -12px;
+  right: -275px;
+  width: 136px;
+  height: 164px;
+  background-image: url('../img/delivery.svg');
+}
+
+.slide--2 .services__slider-wrap::after {
+  top: -12px;
+  right: -275px;
+  width: 171px;
+  height: 195px;
+  background-image: url('../img/warranty.svg');
+}
+
+.slide--3 .services__slider-wrap::after {
+  top: -12px;
+  right: -275px;
+  width: 156px;
+  height: 188px;
+  background-image: url('../img/warranty.svg');
 }
 
 .slide--2,
