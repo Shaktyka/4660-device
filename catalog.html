@@ -18,8 +18,11 @@
       <div class="page-header__menu main-menu">
 
         <div class="main-menu__search">
-          <a class="main-menu__search-link" href="#">Поиск по сайту</a>
-          <a class="main-menu__search-button button button--search" href="#">Найти</a>
+          <form class="search__form" action="https://htmlacademy.ru/echo" method="get">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input class="main-menu__search-field" id="search" type="search" name="search-field" placeholder="Поиск по сайту">
+            <a class="main-menu__search-button button button--search" href="#">Найти</a>
+          </form>
         </div>
 
         <ul class="main-menu__user-menu user-menu">
@@ -156,11 +159,11 @@
                 <fieldset class="filter__unit bluetooth-filter">
                   <legend class="form__legend">Bluetooth</legend>
                     <p class="form__input-wrap">
-                      <input class="form__radio" id="radio-bluetooth-yes" name="bluetooth-yes" type="radio" value="yes" checked>
+                      <input class="form__radio" id="radio-bluetooth-yes" name="bluetooth" type="radio" value="yes" checked>
                       <label for="radio-bluetooth-yes">Есть</label>
                     </p>
                     <p class="form__input-wrap">
-                      <input class="form__radio" id="radio-bluetooth-no" name="bluetooth-no" type="radio" value="no">
+                      <input class="form__radio" id="radio-bluetooth-no" name="bluetooth" type="radio" value="no">
                       <label for="radio-bluetooth-no">Нет</label>
                     </p>
                 </fieldset>
@@ -266,13 +269,13 @@
                 <li class="pagination__item pagination__item--prev">
                   <a class="pagination__link" href="#">Назад</a>
                 </li>
-                <li class="pagination__item pagination__item--active">
+                <li class="pagination__item pagination__item--number pagination__item--active">
                   <a class="pagination__link" href="#">1</a>
                 </li>
-                <li class="pagination__item">
+                <li class="pagination__item pagination__item--number">
                   <a class="pagination__link" href="#">2</a>
                 </li>
-                <li class="pagination__item">
+                <li class="pagination__item pagination__item--number">
                   <a class="pagination__link" href="#">3</a>
                 </li>
                 <li class="pagination__item pagination__item--next">
@@ -381,11 +384,11 @@
       <div class="write-us__wrap">
         <p class="form__input-wrap">
           <label class="form__label" for="name">Ваше имя:</label>
-          <input class="write-us__name form__text-input" id="name" name="name" type="text" placeholder="Имя Фамилия">
+          <input class="write-us__name form__text-input" id="name" name="name" type="text" placeholder="Имя Фамилия" value="">
         </p>
         <p class="form__input-wrap">
           <label class="form__label" for="email">Ваш e-mail:</label>
-          <input class="write-us__email form__text-input" id="email" name="email" type="email" placeholder="email@example.com">
+          <input class="write-us__email form__text-input" id="email" name="email" type="email" placeholder="email@example.com" value="">
         </p>
       </div>
 
