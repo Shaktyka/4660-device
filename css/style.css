@@ -1304,6 +1304,23 @@ body {
 }
 
 .products__item {
+  padding-bottom: 20px;
+}
+
+.product__wrapper {
+  position: relative;
+}
+
+.product__new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.products__item {
   margin-left: 20px;
   margin-right: 20px;
 }
