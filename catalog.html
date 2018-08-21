@@ -131,14 +131,40 @@
             <div class="filter__content">
               <form class="filter__form form" action="https://htmlacademy.ru/echo" method="get">
 
-                <fieldset class="filter__unit price-filter">
-                  <legend class="form__legend">Стоимость</legend>
-                  <div class="form__range range">
-                    рейндж
-                  </div>
-                </fieldset>
+                <div class="form__inner-wrap">
+                  <fieldset class="filter__unit price-filter">
+                    <legend class="form__legend">Стоимость</legend>
+                    <div class="form__range range">
+                      
+                      <div class="range__wrap">
+                        <div class="range__bar"></div>
+                        <div class="range__range"></div>
+                        <div class="button range__toggle range__toggle--min" tabindex="0">
+                          <span class="visually-hidden">Цена от</span>
+                        </div>
+                        <div class="button range__toggle range__toggle--max" tabindex="0">
+                          <span class="visually-hidden">Цена до</span>
+                        </div>
+                        
+                        <div class="range__inputs-wrap">
+                          <p>
+                            <label for="min">от</label>
+                            <input class="range__input range__input--min" id="min" type="number" min="0" value="0">
+                          </p>
+                          <p>
+                            <label for="max">до</label>
+                            <input class="range__input range__input--max" id="max" type="number" value="5000">
+                          </p>
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                  </fieldset>
+                </div>
 
-                <fieldset class="filter__unit color-filter">
+                <div class="form__inner-wrap">
+                  <fieldset class="filter__unit color-filter">
                   <legend class="form__legend">Цвет</legend>
                     <p class="form__input-wrap">
                       <input class="form__checkbox" id="check-black" name="color-black" type="checkbox" value="black" checked>
@@ -160,9 +186,11 @@
                       <input class="form__checkbox" id="check-pink" name="color-pink" type="checkbox" value="pink">
                       <label for="check-pink">Розовый</label>
                     </p>
-                </fieldset>
+                  </fieldset>
+                </div>
 
-                <fieldset class="filter__unit bluetooth-filter">
+                <div class="form__inner-wrap">
+                  <fieldset class="filter__unit bluetooth-filter">
                   <legend class="form__legend">Bluetooth</legend>
                     <p class="form__input-wrap">
                       <input class="form__radio" id="radio-bluetooth-yes" name="bluetooth" type="radio" value="yes" checked>
@@ -172,7 +200,8 @@
                       <input class="form__radio" id="radio-bluetooth-no" name="bluetooth" type="radio" value="no">
                       <label for="radio-bluetooth-no">Нет</label>
                     </p>
-                </fieldset>
+                  </fieldset>
+                </div>
 
                 <p class="filter__unit sumbit">
                   <a class="sumbit__button button button--act" href="#">Показать</a>
@@ -225,7 +254,7 @@
               <ul class="products__list">
                 <li class="products__item product">
                   <div class="product__wrapper">
-                    <p class="product__new">
+                    <p class="visually-hidden product__new">
                       new
                     </p>
                     <p class="product__img-wrap">
@@ -239,7 +268,7 @@
                 </li>
                 <li class="products__item product">
                   <div class="product__wrapper">
-                    <p class="product__new">
+                    <p class="visually-hidden product__new">
                       new
                     </p>
                     <p class="product__img-wrap">
@@ -253,7 +282,7 @@
                 </li>
                 <li class="products__item product">
                   <div class="product__wrapper">
-                    <p class="product__new">
+                    <p class="visually-hidden product__new">
                       new
                     </p>
                     <p class="product__img-wrap">

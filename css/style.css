@@ -212,6 +212,14 @@ body {
   border: 3px solid rgba(240, 197, 46, 0.5);
 }
 
+fieldset.filter__unit {
+  border: none;
+}
+
+.form__inner-wrap {
+  border-top: 2px solid #000000;
+}
+
 :invalid {
   background-color: rgba(237, 181, 181, 0.5);
   border: 3px solid #f6dada;
@@ -1183,10 +1191,6 @@ body {
   background-color: #eeeeee;
 }
 
-.filter__wrap {
-  width: 202px;
-}
-
 .filter__header {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1211,6 +1215,10 @@ body {
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.filter__content {
+  padding-right: 68px;
 }
 
 /* КАТАЛОГ СОРТИРОВКА */
@@ -1310,6 +1318,73 @@ body {
 .sort-toggles__item:last-child a {
   background-image: url('../img/icon-down-dir.svg');
 }
+
+/* РЕЙНДЖ */
+
+.range {
+  padding-top: 25px;
+}
+
+.range__wrap {
+  position: relative;
+}
+
+.range__bar {
+  width: 200px;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.range__range {
+  position: relative;
+  width: 115px;
+  height: 2px;
+  top: -2px;
+  background-color: #91c92f;
+}
+
+.range__toggle {
+  box-sizing: border-box;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: 0;
+  background-color: #ababab;
+  
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+}
+
+.range__toggle--min {
+  left: -6px;
+}
+
+.range__toggle--max {
+  left: 107px;
+}
+
+.range__inputs-wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.range__inputs-wrap p:first-child {
+  margin-right: 25px;
+}
+
+.range__input {
+  width: 50px;
+  background-color: transparent;
+  border: none;
+}
+
 
 /* КАТАЛОГ ТОВАРЫ */
 
