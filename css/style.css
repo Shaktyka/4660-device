@@ -98,7 +98,7 @@ body {
   width: 220px;
   min-height: 40px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -140,7 +140,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -151,7 +151,7 @@ body {
 .form__label {
   display: block;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -252,7 +252,7 @@ fieldset.filter__unit {
 }
 
 .page-header__logo {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 48px;
   line-height: 48px;
   color: #000000;
@@ -372,7 +372,7 @@ fieldset.filter__unit {
 .catalog-page .user-menu__element:first-child {
   width: 160px;
 }
- 
+
 .user-menu__element:first-child {
   margin-right: auto;
 }
@@ -459,7 +459,7 @@ fieldset.filter__unit {
 
 .navigation-list__link {
   display: block;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -593,7 +593,7 @@ fieldset.filter__unit {
   margin: 0;
   margin-bottom: 28px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   color: #000000;
@@ -619,7 +619,7 @@ fieldset.filter__unit {
   width: 180px;
   height: 180px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179.2px;
   line-height: 179.2px;
   color: #ffffff;
@@ -805,7 +805,7 @@ fieldset.filter__unit {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -848,7 +848,7 @@ fieldset.filter__unit {
   justify-content: center;
   width: 160px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -924,7 +924,7 @@ fieldset.filter__unit {
   margin-bottom: 40px;
   padding: 0;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -994,7 +994,7 @@ fieldset.filter__unit {
   padding: 0;
   padding-top: 52px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -1043,7 +1043,7 @@ fieldset.filter__unit {
   position: relative;
   padding-left: 35px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -1072,7 +1072,7 @@ fieldset.filter__unit {
   padding: 0;
   padding-top: 52px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -1131,7 +1131,7 @@ fieldset.filter__unit {
   margin-bottom: 25px;
   padding: 0;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -1159,7 +1159,7 @@ fieldset.filter__unit {
 .breadcrumbs__link {
   display: inline-block;
   vertical-align: top;
-  
+
   font-size: 14px;
   line-height: 24px;
   color: #000000;
@@ -1208,7 +1208,7 @@ fieldset.filter__unit {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
@@ -1232,7 +1232,7 @@ fieldset.filter__unit {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  
+
   padding-left: 73px;
   background-color: rgba(0, 0, 0, 0.08);
   min-height: 70px;
@@ -1244,7 +1244,7 @@ fieldset.filter__unit {
   margin-right: 40px;
   padding: 0;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
@@ -1261,7 +1261,7 @@ fieldset.filter__unit {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+
   width: 300px;
   margin: 0;
   padding: 0;
@@ -1292,7 +1292,7 @@ fieldset.filter__unit {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  
+
   width: 41px;
   margin: 0;
   margin-left: auto;
@@ -1305,7 +1305,7 @@ fieldset.filter__unit {
   vertical-align: top;
   width: 11px;
   height: 30px;
-  
+
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1351,7 +1351,7 @@ fieldset.filter__unit {
   top: -10px;
   left: 0;
   background-color: #ababab;
-  
+
   border: 8px solid #ffffff;
   border-radius: 50%;
 }
@@ -1414,7 +1414,7 @@ fieldset.filter__unit {
 .product__new {
   box-sizing: border-box;
   position: absolute;
-  
+
   width: 60px;
   height: 60px;
   top: 0;
@@ -1425,7 +1425,7 @@ fieldset.filter__unit {
   padding-right: 9px;
   padding-bottom: 18px;
   padding-left: 11px;
-  
+
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -1434,7 +1434,7 @@ fieldset.filter__unit {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: center;
-  
+
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
@@ -1467,7 +1467,7 @@ fieldset.filter__unit {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -1487,7 +1487,7 @@ fieldset.filter__unit {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #464646;
@@ -1521,8 +1521,8 @@ fieldset.filter__unit {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
-  font-family: "Gilroy";
+
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
@@ -1619,7 +1619,7 @@ fieldset.filter__unit {
 }
 
 .page-footer__logo {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 48px;
   line-height: 48px;
   color: #ffc600;
@@ -1695,7 +1695,7 @@ fieldset.filter__unit {
   display: inline-block;
 
   text-align: center;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
