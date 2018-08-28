@@ -968,8 +968,28 @@ fieldset.filter__unit {
 }
 
 .logotype__image {
+/*  position: relative;*/
   opacity: 0.2;
 }
+
+/*
+.logotype .logotype__image::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100px;
+  background-color: yellow;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 5;
+}
+
+.logotype--dji .logotype__image::before {
+  background-image: url('../img/partner-1.jpg');
+}
+*/
 
 /* РАЗДЕЛ ИНФО */
 
