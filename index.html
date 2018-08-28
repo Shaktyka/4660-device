@@ -474,9 +474,9 @@
   </footer>
 
   <!-- Всплывающее окно Напишите нам -->
-  <section class="modal write-us">
+  <section class="modal write-us visually-hidden">
 
-    <button class="modal__close button button--close" type="button">
+    <button class="modal__close button button--close write-us__close" type="button">
       <span class="visually-hidden">Закрыть</span>
     </button>
 
@@ -509,9 +509,9 @@
   </section>
 
   <!-- Всплывающее окно с большим изображением карты -->
-  <section class="modal map-popup">
+  <section class="modal map-popup visually-hidden">
 
-    <button class="modal__close button button--close" type="button">
+    <button class="modal__close button button--close map-popup__close" type="button">
       <span class="visually-hidden">Закрыть</span>
     </button>
 
@@ -522,6 +522,9 @@
     </p>
   </section>
 
-  <script src="js/change-logotypes.js"></script>
+  <script src="js/change-logotypes.js">
+  </script>
+  <script src="js/popup-write-us.js"></script>
+  <script src="js/popup-map.js"></script>
 </body>
 </html>

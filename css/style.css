@@ -1808,14 +1808,18 @@ fieldset.filter__unit {
 
 .modal {
   position: fixed;
+  background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
 /* MODAL НАПИШИТЕ НАМ */
 
 .write-us {
-  display: none;
-  position: relative;
+/*  display: none;*/
+/*  position: relative;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   width: 960px;
   min-height: 555px;
@@ -1905,8 +1909,14 @@ fieldset.filter__unit {
 /* MODAL с картой */
 
 .map-popup {
+/*
   position: relative;
   display: none;
+*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   width: 960px;
   height: 560px;
 
